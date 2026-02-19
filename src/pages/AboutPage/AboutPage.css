@@ -1,0 +1,105 @@
+/* =========================
+   AboutPage.css
+   ========================= */
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.about-card {
+    width: 100%;
+    max-width: 900px;
+
+    background-color: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.07);
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .about {
+        padding: 0;
+    }
+
+    .about-card {
+        padding: 28px 32px;
+        gap: 18px;
+    }
+}
+
+.about-title {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: -0.3px;
+}
+
+@media (min-width: 768px) {
+    .about-title {
+        font-size: 1.6rem;
+    }
+}
+
+.about-text {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.65;
+    opacity: 0.92;
+}
+
+/* Sections */
+.about-section {
+    margin-top: 4px;
+}
+
+.about-subtitle {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+    .about-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* List */
+.about-list {
+    margin: 0;
+    padding-left: 18px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    font-size: 0.97rem;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.about-list li {
+    line-height: 1.55;
+}
+
+/* Footer note */
+.about-footer {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--muted-text);
+    text-align: center;
+    font-style: italic;
+}

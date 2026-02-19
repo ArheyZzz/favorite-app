@@ -1,0 +1,136 @@
+/* =========================
+   HomePage.css
+   ========================= */
+
+.home-page {
+    width: 100%;
+
+    background-color: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+
+    padding: 16px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* tablet+ */
+@media (min-width: 768px) {
+    .home-page {
+        padding: 24px 28px;
+    }
+}
+
+/* =========================
+   Header
+   ========================= */
+
+.home-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+/* tablet+ */
+@media (min-width: 640px) {
+    .home-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.home-title {
+    margin: 0;
+
+    font-size: 1.35rem;
+    font-weight: 600;
+
+    color: var(--text-color);
+}
+
+/* tablet+ */
+@media (min-width: 768px) {
+    .home-title {
+        font-size: 1.6rem;
+    }
+}
+
+/* =========================
+   Fetch button
+   ========================= */
+
+.home-fetch-btn {
+    align-self: flex-start;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+    border: none;
+
+    background-color: var(--accent);
+    color: white;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+.home-fetch-btn:hover {
+    background-color: #1d4fd8;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+}
+
+.home-fetch-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(37, 99, 235, 0.25);
+}
+
+/* mobile full-width button */
+@media (max-width: 640px) {
+    .home-fetch-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* =========================
+   Content
+   ========================= */
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* =========================
+   Loading state
+   ========================= */
+
+.home-loading {
+    padding: 20px;
+
+    text-align: center;
+
+    font-size: 1rem;
+    color: var(--muted-text);
+}
+
+/* tablet+ */
+@media (min-width: 768px) {
+    .home-loading {
+        font-size: 1.1rem;
+    }
+}

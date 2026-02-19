@@ -1,0 +1,49 @@
+/* =========================
+   App.css (clean + layout helpers)
+   ========================= */
+
+.app {
+  width: 100%;
+}
+
+/* Универсальная "страница-карточка" */
+.page-card {
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Универсальный паддинг для карточек/страниц */
+.page-pad {
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .page-pad {
+    padding: 24px;
+  }
+}
+
+/* Служебные состояния (loading/error/empty) */
+.status {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  border: 1px solid var(--border-color);
+  background: var(--surface);
+  color: var(--muted-text);
+}
+
+.status--error {
+  border-color: rgba(239, 68, 68, 0.25);
+  background: rgba(239, 68, 68, 0.06);
+  color: #b91c1c;
+}
+
+.status--success {
+  border-color: rgba(16, 185, 129, 0.25);
+  background: rgba(16, 185, 129, 0.06);
+  color: #047857;
+}

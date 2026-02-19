@@ -1,0 +1,139 @@
+/* =========================
+   index.css (clean + responsive)
+   ========================= */
+
+/* Reset / base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* LIGHT theme (default) */
+  --bg: #e5e7eb;
+  /* page background */
+  --surface: #ffffff;
+  /* cards background */
+  --text-color: #111827;
+  /* main text */
+  --muted-text: #6b7280;
+  /* muted text */
+  --border-color: #e5e7eb;
+  /* borders */
+  --accent: #2563eb;
+  /* accent */
+  --accent-soft: #eff6ff;
+  /* accent soft */
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1d4fd8;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text-color);
+}
+
+/* App container */
+#root {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 24px;
+  }
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+/* Buttons (base) */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f3f4f6;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease, transform 0.1s ease;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.4);
+  outline-offset: 2px;
+}
+
+/* =========================
+   Dark theme
+   Toggle by: document.documentElement.dataset.theme = 'dark'
+   ========================= */
+:root[data-theme='dark'] {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text-color: #e2e8f0;
+  --muted-text: #94a3b8;
+  --border-color: #334155;
+  --accent: #38bdf8;
+  --accent-soft: #0f172a;
+}
+
+/* Dark theme links/buttons */
+:root[data-theme='dark'] a {
+  color: var(--accent);
+}
+
+:root[data-theme='dark'] a:hover {
+  color: #7dd3fc;
+}
+
+:root[data-theme='dark'] button {
+  background-color: #1e293b;
+  color: var(--text-color);
+  border-color: #334155;
+}
+
+:root[data-theme='dark'] button:hover {
+  background-color: #334155;
+  border-color: var(--accent);
+}

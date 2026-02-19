@@ -1,0 +1,46 @@
+/* =========================
+   Footer.css
+   ========================= */
+
+.footer {
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 14px 16px;
+
+    text-align: center;
+
+    background-color: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* tablet+ */
+@media (min-width: 768px) {
+    .footer {
+        padding: 16px 22px;
+    }
+}
+
+.footer-text {
+    margin: 0;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    color: var(--muted-text);
+
+    letter-spacing: 0.2px;
+
+    opacity: 0.9;
+}
+
+/* mobile smaller text */
+@media (max-width: 480px) {
+    .footer-text {
+        font-size: 0.85rem;
+    }
+}

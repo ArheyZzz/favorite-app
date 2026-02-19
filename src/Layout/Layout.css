@@ -1,0 +1,51 @@
+/* =========================
+   Layout.css (clean + responsive)
+   ========================= */
+
+.layout {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    background: transparent;
+    color: var(--text-color);
+}
+
+/* Контейнер приложения */
+.layout-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 0;
+}
+
+/* main */
+.layout main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+    .layout {
+        gap: 12px;
+    }
+
+    .layout-inner {
+        gap: 12px;
+    }
+
+    .layout main {
+        gap: 12px;
+    }
+}

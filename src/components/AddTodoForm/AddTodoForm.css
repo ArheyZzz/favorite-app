@@ -1,0 +1,102 @@
+/* =========================
+   AddTodoForm.css
+   ========================= */
+
+.todo-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+}
+
+/* =========================
+   Input
+   ========================= */
+
+.todo-input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 10px 14px;
+
+    border-radius: 999px;
+    border: 1px solid var(--border-color);
+
+    font-size: 0.95rem;
+
+    outline: none;
+
+    background-color: var(--surface);
+    color: var(--text-color);
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.15s ease;
+}
+
+.todo-input::placeholder {
+    color: var(--muted-text);
+}
+
+.todo-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* =========================
+   Button
+   ========================= */
+
+.todo-submit-btn {
+    flex: 0 0 auto;
+
+    padding: 10px 16px;
+
+    border-radius: 999px;
+    border: none;
+
+    background-color: #10b981;
+    color: #ffffff;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.28);
+}
+
+.todo-submit-btn:hover {
+    background-color: #0f9f72;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(16, 185, 129, 0.35);
+}
+
+.todo-submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(16, 185, 129, 0.22);
+}
+
+/* =========================
+   Mobile adaptation
+   ========================= */
+
+@media (max-width: 520px) {
+
+    .todo-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .todo-submit-btn {
+        width: 100%;
+    }
+
+}
