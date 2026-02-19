@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Redirect</title>
+  <script>
+    // GitHub Pages SPA redirect for /favorite-app
+    var repo = '/favorite-app';
+    var path = window.location.pathname;
+
+    // remove repo prefix from path
+    if (path.startsWith(repo)) path = path.slice(repo.length);
+
+    // redirect to index with hash
+    window.location.replace(repo + '/#' + path + window.location.search);
+  </script>
+</head>
+
+<body></body>
+
+</html>
